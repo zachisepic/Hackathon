@@ -7,7 +7,10 @@ class VirtualDog:
         self.hunger = 0
         self.happiness = 100
         self.relationship = 0
-
+        self.emotions= ["happy", "sad", "mad", "silly","energetic"]
+    def emotion_status(self):
+        print(f"{self.name} is currently feeling {self.emotion}.")
+    
     def feed(self):
         self.hunger = max(0, self.hunger - 20)
         print(f"{self.name} has been fed. Hunger: {self.hunger}")
