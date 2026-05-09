@@ -1,5 +1,6 @@
 import sys
 
+
 class VirtualDog:
     def __init__(self, name):
         self.name = name
