@@ -47,10 +47,48 @@ class VirtualDog:
             self.relationship = 0
             self.relations[rNum]
             option = input("Option: ")
-            if option == "A":
+            if option == "A" and rNum == 0:
                 print(fact.history1)
-            elif option == "B":
+            elif option == "B" and rNum == 0:
                 print(fact.biology1)
-            elif option == "C":
+            elif option == "C" and rNum == 0:
                 print(fact.geography1)
-                
+            elif option == "A" and rNum == 1:
+                print(fact.history2)
+            elif option == "B" and rNum == 1:
+                print(fact.biology2)
+            elif option == "C" and rNum == 1:
+                print(fact.geography2)
+            elif option == "A" and rNum == 2:
+                print(fact.history3)
+            elif option == "B" and rNum == 2:
+                print(fact.biology3)
+            elif option == "C" and rNum == 2:
+                print(fact.geography3)
+            elif option == "A" and rNum == 3:
+                print(fact.history4)
+            elif option == "B" and rNum == 3:
+                print(fact.biology4)
+            elif option == "C" and rNum == 3:
+                print(fact.geography4)
+            elif option == "A" and rNum == 4:
+                print(fact.history5)
+            elif option == "B" and rNum == 4:
+                print(fact.biology5)
+            elif option == "C" and rNum == 4:
+                print(fact.geography5)
+            elif option == "A" and rNum == 5:
+                print(fact.history6)
+            elif option == "B" and rNum == 5:
+                print(fact.biology6)
+            elif option == "C" and rNum == 5:
+                print(fact.geography6)
+            elif option == "A" and rNum == 6:
+                print(fact.history7)
+            elif option == "B" and rNum == 6:
+                print(fact.biology7)
+            elif option == "C" and rNum == 6:
+                print(fact.geography7)
+
+
+                   
