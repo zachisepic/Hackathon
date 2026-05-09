@@ -34,3 +34,5 @@ def CheckCommands(command):
     elif(command == 'Relationship'):
         
         dog.check_relationship(5)
+    elif(command == 'Status'):
+        dog.status()

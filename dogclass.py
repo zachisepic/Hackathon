@@ -1,6 +1,7 @@
 import sys
-from time import time
+import time
 import fact
+from main import inventory
 
 
 class VirtualDog:
@@ -40,11 +41,12 @@ class VirtualDog:
             time.sleep(120)
             self.hunger -= 10
             if self.hunger <= 30:
-                self.relationship -= 10
+                self.happiness -= 10
             else:
-                self.relationship += 5
+                self.happiness += 5
     def waste(self):
         print(f"\n{self.name} has relieved itself.")
+        inventory["Waste"] += 1
     def check_relationship(self, rNum):
         print(f"{self.name} considers you a {self.relations[rNum]} with a relationship score of {self.relationship}.")
         if self.relationship >= 0:
