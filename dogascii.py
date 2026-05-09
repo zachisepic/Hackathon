@@ -58,7 +58,41 @@ alien_dog_eating = """
 """
 print(alien_dog_eating)
 
+#hunger bars for the dog 
+hunger_bar = """
 
+0% Hunger (Starving)
+[--------------------]
 
+10% Hunger
+[██------------------]
 
-# https://chatgpt.com/gg/v/69ff51461930819a9ed3149b2f1b0e1c?token=yXVS5f6J3zHR16UfOtGdFA
+20% Hunger
+[████----------------]
+
+30% Hunger
+[██████--------------]
+
+40% Hunger
+[████████------------]
+
+50% Hunger (Half-way)
+[██████████----------]
+
+60% Hunger
+[████████████--------]
+
+70% Hunger
+[██████████████------]
+
+80% Hunger
+[████████████████----]
+
+90% Hunger
+[██████████████████--]
+
+100% Hunger (Full)
+[████████████████████]
+
+"""
+print(hunger_bar)
