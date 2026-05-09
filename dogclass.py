@@ -1,4 +1,5 @@
 import sys
+import fact
 
 
 class VirtualDog:
@@ -35,12 +36,21 @@ class VirtualDog:
             print(f"{self.name} is not very happy.")
 
     def check_relationship(self, rNum):
+        print(f"{self.name} considers you a {self.relations[rNum]} with a relationship score of {self.relationship}.")
         if self.relationship >= 100:
             print(f"You have beeen kind to me in return I'll tell you anything about your home planet!")
             print("""
             Pick a topic:
                   A: For History
                   B: For Biology
-            """)
+                  C: For Geography""")
             self.relationship = 0
             self.relations[rNum]
+            option = input("Option: ")
+            if option == "A":
+                print(fact.history1)
+            elif option == "B":
+                print(fact.biology1)
+            elif option == "C":
+                print(fact.geography1)
+                
