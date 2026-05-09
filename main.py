@@ -1,4 +1,4 @@
-from commands import CheckCommands
+from commands import CheckCommands, rNum
 from Dog import dog
 import time
 import threading
@@ -14,6 +14,7 @@ inventory = {
 
     "Waste": 0,
 }
+rNum = 0
 
 threading.Thread(target=dog.hunger_decay, daemon=True).start()
 dog.hunger = 100
@@ -24,3 +25,5 @@ while run:
         run = False
     if dog.hunger > 100:
         dog.hunger = 100
+    if dog.relationship == 100:
+        rNum += 1

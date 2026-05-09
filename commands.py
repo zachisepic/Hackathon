@@ -33,6 +33,6 @@ def CheckCommands(command):
         input("What color of Crystal do you pick: ")
     elif(command == 'Relationship'):
         
-        dog.check_relationship(5)
+        dog.check_relationship(rNum)
     elif(command == 'Status'):
         dog.status()

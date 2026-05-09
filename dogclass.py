@@ -51,11 +51,21 @@ class VirtualDog:
         if self.relationship >= 0:
             print(f"You have beeen kind to me in return I'll tell you anything about your home planet!")
             print("""
-            Pick a topic:
+            Pick a topic:player_inventory = {
+    "Red Crystal": 0,
+    "Blue Crystal": 0,
+    "Green Crystal": 0,
+    "Purple Crystal": 0,
+    "Gold Crystal": 0,
+
+    "Dog Food": 3,
+    "Treats": 5,
+
+    "Coins": 100
+}
                   A: For History
                   B: For Biology
                   C: For Geography""")
-            self.relationship = 0
             self.relations[rNum]
             option = input("Option: ")
             if option == "A" and rNum == 0:
