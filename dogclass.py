@@ -37,7 +37,7 @@ class VirtualDog:
 
     def check_relationship(self, rNum):
         print(f"{self.name} considers you a {self.relations[rNum]} with a relationship score of {self.relationship}.")
-        if self.relationship >= 100:
+        if self.relationship >= 0:
             print(f"You have beeen kind to me in return I'll tell you anything about your home planet!")
             print("""
             Pick a topic:
