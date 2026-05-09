@@ -1,8 +1,9 @@
-from dogclass import VirtualDog
+from commands import CheckCommands
 
-name = input("Name your dog: ")
+run = True
 
-dog = VirtualDog(name)
-
-while (name != ""):
-    player = input("")
+while run:
+    player = input("Enter a command: ")
+    CheckCommands(player)
+    if (player == 'Exit'):
+        run = False
