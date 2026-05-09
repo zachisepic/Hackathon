@@ -1,5 +1,6 @@
 from Dog import dog
 
+dog.relationship = 200
 
 def CheckCommands(command):
     if(command == 'help'):
@@ -28,4 +29,7 @@ def CheckCommands(command):
         Yellow Crystal
         White Crystal
         """)
+        input("What color of Crystal do you pick: ")
+    elif(command == 'Relationship'):
         
+        dog.check_relationship(1)
