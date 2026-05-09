@@ -1,5 +1,6 @@
 from Dog import dog
 import player
+import random
 
 
 
@@ -14,6 +15,7 @@ def CheckCommands(command):
               Happiness - Check his happiness
               Relationship - Check how close you guys are
               Crystals - Look at all different crystal types
+              Recycle - Recycle Waste
               Exit - Leave the program
 
 """)
@@ -30,9 +32,10 @@ def CheckCommands(command):
         Blue Crystal
         Yellow Crystal
         White Crystal
-        Recycle
+        
         """)
         color = input("What color of Crystal do you pick: ")
+        
     elif(command == 'Relationship'):
         dog.check_relationship(player.rNum)
     elif(command == 'Status'):
@@ -40,4 +43,14 @@ def CheckCommands(command):
     elif (command == 'Inventory'):
         print(player.inventory)
     elif (command == 'Recycle'):
-        
+        if player.inventory["Waste"] > 0:
+            player.inventory["Waste"] -= 1
+            player.inventory["White Crystal"] += 1
+            print(f"You got a White Crystal")
+        elif (player.inventory["Waste"] > 0 and player.rNum == 3):
+            r1 = random.choice(player.inventory)
+            r1 += 1
+            print(r1)
+            
+
+

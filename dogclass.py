@@ -41,7 +41,7 @@ class VirtualDog:
             time.sleep(120)
             self.hunger -= 10
             self.waste()
-            if self.hunger <= 30:
+            if self.hunger <= 50:
                 self.relationship -= 10
             else:
                 self.relationship += 5
