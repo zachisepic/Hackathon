@@ -1,9 +1,10 @@
 from Dog import dog
+import player
 
-rNum = 0
 
 
 def CheckCommands(command):
+    
     if(command == 'help'):
         print("""
               Emotions - Check emotions
@@ -29,10 +30,14 @@ def CheckCommands(command):
         Blue Crystal
         Yellow Crystal
         White Crystal
+        Recycle
         """)
-        input("What color of Crystal do you pick: ")
+        color = input("What color of Crystal do you pick: ")
     elif(command == 'Relationship'):
-        
-        dog.check_relationship(rNum)
+        dog.check_relationship(player.rNum)
     elif(command == 'Status'):
         dog.status()
+    elif (command == 'Inventory'):
+        print(player.inventory)
+    elif (command == 'Recycle'):
+        
