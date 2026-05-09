@@ -16,3 +16,16 @@ def CheckCommands(command):
 """)
     elif(command == 'Emotions'):
         dog.emotion_status(1)
+    
+    elif(command == 'Feed'):
+        print("What kind of crystal do you want to give it:")
+        print("""
+        All crystals:
+        Red Crystal
+        Green Crystal
+        Orange Crystal
+        Blue Crystal
+        Yellow Crystal
+        White Crystal
+        """)
+        
