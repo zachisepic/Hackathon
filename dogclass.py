@@ -29,3 +29,7 @@ class VirtualDog:
             print(f"{self.name} is moderately happy.")
         else:
             print(f"{self.name} is not very happy.")
+    def check_relationship(self):
+        if self.relationship >= 100:
+            print(f"You have beeen kind to me in return I'll tell you anything about your home planet!")
+       
