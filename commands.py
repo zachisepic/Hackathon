@@ -1,6 +1,6 @@
 from Dog import dog
 
-rNum = 5
+rNum = 0
 
 
 def CheckCommands(command):
