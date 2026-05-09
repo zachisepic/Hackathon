@@ -9,7 +9,7 @@ class VirtualDog:
         self.happiness = 100
         self.relationship = 0
         self.emotions= ["happy", "sad", "mad", "silly","energetic"]
-        self.relations=["Strangers", "Friendly", "Companion", "Trusted", "Loyal", "Devoted", "Soul Bound"]
+        self.relations=["Strangers", "Friendly", "Companions", "Trusted", "Loyal", "Devoted", "Soul Bound"]
     def emotion_status(self, EmotionNum):
         print(f"{self.name} is currently feeling {self.emotions[EmotionNum]}.")
     
