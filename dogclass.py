@@ -1,6 +1,7 @@
 import sys
 import fact
 import time
+from player import inventory
 
 
 class VirtualDog:
@@ -9,7 +10,7 @@ class VirtualDog:
         self.hunger = 0
         self.happiness = 100
         self.relationship = 0
-        self.emotions= ["happy", "sad", "mad", "silly","energetic"]
+        self.emotions= ["happy", "nerd", "mad", "silly","energetic"]
         self.relations=["Strangers", "Friendly", "Companions", "Trusted", "Loyal", "Devoted", "Soul Bound"]
     def emotion_status(self, EmotionNum):
         print(f"{self.name} is currently feeling {self.emotions[EmotionNum]}.")
@@ -39,6 +40,7 @@ class VirtualDog:
         while True:
             time.sleep(120)
             self.hunger -= 10
+            self.waste()
             if self.hunger <= 30:
                 self.relationship -= 10
             else:
@@ -46,6 +48,8 @@ class VirtualDog:
     
     def waste(self):
         print(f"\n{self.name} has relieved itself.")
+        inventory["Waste"] += 2
+        
     def check_relationship(self, rNum):
         print(f"{self.name} considers you a {self.relations[rNum]} with a relationship score of {self.relationship}.")
         if self.relationship >= 0:
