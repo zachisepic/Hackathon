@@ -9,7 +9,7 @@ class VirtualDog:
         self.happiness = 100
         self.relationship = 0
         self.emotions= ["happy", "sad", "mad", "silly","energetic"]
-        self.relations=["Strangers", "Friendly", "Companion", "Trusted", "Loyal", "Devoted", "Soul Bound"]
+        self.relations=["Strangers", "Friendly", "Companions", "Trusted", "Loyal", "Devoted", "Soul Bound"]
     def emotion_status(self, EmotionNum):
         print(f"{self.name} is currently feeling {self.emotions[EmotionNum]}.")
     
@@ -36,7 +36,7 @@ class VirtualDog:
             print(f"{self.name} is not very happy.")
 
     def check_relationship(self, rNum):
-        print(f"{self.name} considers you a {self.relations[rNum]} with a relationship score of {self.relationship}.")
+        print(f"{self.name} considers you to be {self.relations[rNum]} with a relationship score of {self.relationship}.")
         if self.relationship >= 100:
             print(f"You have beeen kind to me in return I'll tell you anything about your home planet!")
             print("""
