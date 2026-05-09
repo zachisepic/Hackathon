@@ -5,6 +5,7 @@ class VirtualDog:
         self.name = name
         self.hunger = 0
         self.happiness = 100
+        self.relationship = 0
 
     def feed(self):
         self.hunger = max(0, self.hunger - 20)
