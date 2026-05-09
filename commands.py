@@ -1,6 +1,6 @@
 from Dog import dog
 
-rNum = 5
+rNum = 0
 
 
 def CheckCommands(command):
@@ -34,3 +34,5 @@ def CheckCommands(command):
     elif(command == 'Relationship'):
         
         dog.check_relationship(5)
+    elif(command == 'Status'):
+        dog.status()

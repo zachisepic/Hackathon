@@ -1,5 +1,7 @@
 import sys
+import time
 import fact
+from main import inventory
 
 
 class VirtualDog:
@@ -34,7 +36,17 @@ class VirtualDog:
             print(f"{self.name} is moderately happy.")
         else:
             print(f"{self.name} is not very happy.")
-
+    def hunger_decay(self):
+        while True:
+            time.sleep(120)
+            self.hunger -= 10
+            if self.hunger <= 30:
+                self.happiness -= 10
+            else:
+                self.happiness += 5
+    def waste(self):
+        print(f"\n{self.name} has relieved itself.")
+        inventory["Waste"] += 1
     def check_relationship(self, rNum):
         print(f"{self.name} considers you a {self.relations[rNum]} with a relationship score of {self.relationship}.")
         if self.relationship >= 0:
