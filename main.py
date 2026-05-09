@@ -1,5 +1,5 @@
 from commands import CheckCommands
-
+import time
 run = True
 
 while run:
