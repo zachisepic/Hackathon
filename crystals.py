@@ -1,72 +1,63 @@
 def help():
-    """
-    All crystals:
-    Red Crystal
-    Green Crystal
-    Orange Crystal
-    Blue Crystal
-    Yellow Crystal
-    White Crystal
-    """
 
 
 
 #Red Crystal
-red_crystal = """
+    red_crystal = """
     .-.
    (   )
     `-' 
 """
-print('\033[31m' + red_crystal + '\033[0m')
+    print('\033[31m' + red_crystal + '\033[0m')
 
 
 
 # Green Crystal
-green_crystal = """
+    green_crystal = """
     .-.
    (   )
     `-' 
 """
-print("\033[32m" + green_crystal + "\033[0m")
+    print("\033[32m" + green_crystal + "\033[0m")
 
 
 
 # Orange Crystal
-orange_crystal = """
+    orange_crystal = """
     .-.
    (   )
     `-' 
 """
-print("\033[38;5;208m" + orange_crystal + "\033[0m")
+    print("\033[38;5;208m" + orange_crystal + "\033[0m")
 
 
 
 # Yellow Crystal 
-yellow_crystal = """
+    yellow_crystal = """
     .-.
    (   )
     `-' 
 """
-print("\033[33m" + yellow_crystal + "\033[0m")
+    print("\033[33m" + yellow_crystal + "\033[0m")
 
 
 
 # Blue Crystal
-blue_crystal = """
+    blue_crystal = """
     .-.
    (   )
     `-' 
 """
-print("\033[34m" + blue_crystal + "\033[0m")
+    print("\033[34m" + blue_crystal + "\033[0m")
 
 
 # White Crystal
-white_crystal = """
+    white_crystal = """
     .-.
    (   )
     `-' 
 """
-print("\033[37m" + white_crystal + "\033[0m")
+    print("\033[37m" + white_crystal + "\033[0m")
 
 
 # Colors

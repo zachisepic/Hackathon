@@ -47,7 +47,7 @@ class VirtualDog:
                 self.relationship += 5
     
     def waste(self):
-        print(f"\n{self.name} has relieved itself.")
+        print(f"\n{self.name} produced waste.")
         inventory["Waste"] += 2
         
     def check_relationship(self, rNum):
