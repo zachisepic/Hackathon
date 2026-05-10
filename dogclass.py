@@ -2,6 +2,7 @@ import sys
 import fact
 import time
 from player import inventory
+import player
 
 
 class VirtualDog:
@@ -39,6 +40,8 @@ class VirtualDog:
     def hunger_decay(self):
         while True:
             time.sleep(120)
+            if player.eNum == 2:
+                self.happiness -= 5
             self.hunger -= 10
             self.waste()
             if self.hunger <= 50:

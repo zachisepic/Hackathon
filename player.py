@@ -1,5 +1,5 @@
 inventory = {
-    "Red Crystal": 0,
+    "Red Crystal": 1,
     "Green Crystal": 0,
     "Orange Crystal": 0,
     "Blue Crystal": 0,
@@ -10,3 +10,4 @@ inventory = {
 }
 
 rNum = 0
+eNum = 0
